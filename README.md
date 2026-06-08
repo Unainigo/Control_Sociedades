@@ -1,15 +1,55 @@
 # Proyecto Programa gestión sociedades
 
-## 1) Objetivo
-- El objetivo principal de este proyecto sería crear un pequeño problema que nos permita realizar el logueo y autentificación de usuarios en la base de datos. Realizar la reserva de las mesas por parte de los mismos usuarios y por último también llevar una gestión de los productos y también de las ventas que se realizan en la sociedad.
+## 1) Descripción
+- Permite la gestión de socios, productos y reservas mediante una base de datos PostgreSQL. 
 
-## 2) Proximos objetivos en el programa para finalizarlo y mejoras
-- Añadirle uso de sesiones para poder realizar desde ahí tanto las reservas como la compra de materiales debido a que de momento el proyecto no guarda sesión y solo comprueba y guarda datos directamente en la base de datos cuando se realiza el logueo.
-- Una vez acabado con el logueo quiero meterle todas las opciones de compra de los productos. De momento solo quiero que realice y registre en la base de datos quien a comprado que producto y cuanta cantidad. Después también que cuando alguien compre un producto con un trigger se modifique en la base de datos las existencias del producto que quedan en la sociedad.
-- Acabado con el apartado de la venta de productos pasaré a realizar el apartado de las reservas donde los socios podrán reservar las diferentes mesas para realizar diversas actividades.
-- Una vez acabado todo eso quiero añadirle un sistema visual para que no se realice todo desde la terminal.
+## 2) Funcionalidades
+- Gestión de socios
+- Gestión de productos
+- Gestión de reservas
+- Autentificación de socios
 
-## 2) Estructura del proyecto
+## 3) Tecnologías
+- Python
+- SQLAlchemy
+- PostgreSQL
+- Bcrypt
+- Pandas
+
+## 4) Instalación
+
+### 4.1) Clonación del repositorio
+- git clone https://github.com/Unainigo/Control_Sociedades.git 
+
+### 4.2) Creación del entorno virtual
+- python -m venv .venv
+
+### 4.3) Activación del entorno
+- Windows: .venv\Scripts\activate
+- linux/mac: source .venv/bin/activate
+
+### 4.4) Instalar dependencias
+- pip install -r requirements.txt 
+
+## 5) Como ejecutar el proceso
+- python main.py
+
+## 6) Próximas mejoras
+- Implementación de sesiones de usuario para mantener la autenticación activa durante la ejecución del sistema.
+- Sistema completo de compra de productos:
+    - Registro de compras por usuario
+    - Control de stock en base de datos
+    - Uso de triggers para actualizar existencias automáticamente
+- Implementación del sistema de reservas de mesas para socios.
+- Desarrollo de una interfaz visual (GUI o web) para sustituir el uso exclusivo de terminal.
+
+## 7) Actualizaciones realizadas
+
+### 7.1) 08/06/2026 
+- Implementado sistema de login de usuarios.
+- Inicio del sistema de autenticación (pendiente de sesiones para persistencia).
+
+## 8) Estructura del proyecto
 La estructura de capetas del proyecto sería la siguiente:
 ```
 proyecto_Sociedades/
@@ -36,8 +76,6 @@ proyecto_Sociedades/
 └──── README.md
 ```
 
-## 3) Cómo ejecutar
-- Primero tienes que crear el entorno escribiendo el siguiente codigo: python -m venv .venv
-- Para poder ejecutar el código primero tienes que activar el entorno escribiendo el siguiente código estando en el terminal en la carpeta de project_demo: .\.venv\Scripts\activate
-- Antes de lanzar el proyecto tienes que intalar en el .venv todas la librerias que aparecen en el requirements.txt para ello tienes que escribir el siguiente codigo: pip install -r requirements.txt (Todavía tengo que crear el archivo pero hasta no acabar el proyecto no creo que lo cree debido a que todavía le tendré que añadir muchos imports)
-- Después simplemente solo tienes que escribir python main.py para ejecutar todo el código.
+## 9) Autor
+- Unai Iñigo
+- GitHub: https://github.com/Unainigo
