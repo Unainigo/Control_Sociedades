@@ -9,7 +9,7 @@
 - Acabado con el apartado de la venta de productos pasaré a realizar el apartado de las reservas donde los socios podrán reservar las diferentes mesas para realizar diversas actividades.
 - Una vez acabado todo eso quiero añadirle un sistema visual para que no se realice todo desde la terminal.
 
-## 2) Estructura del proyecto
+## 4) Estructura del proyecto
 La estructura de capetas del proyecto sería la siguiente:
 ```
 proyecto_Sociedades/
@@ -36,7 +36,7 @@ proyecto_Sociedades/
 └──── README.md
 ```
 
-## 3) Cómo ejecutar
+## 5) Cómo ejecutar
 - Primero tienes que crear el entorno escribiendo el siguiente codigo: python -m venv .venv
 - Para poder ejecutar el código primero tienes que activar el entorno escribiendo el siguiente código estando en el terminal en la carpeta de project_demo: .\.venv\Scripts\activate
 - Antes de lanzar el proyecto tienes que intalar en el .venv todas la librerias que aparecen en el requirements.txt para ello tienes que escribir el siguiente codigo: pip install -r requirements.txt (Todavía tengo que crear el archivo pero hasta no acabar el proyecto no creo que lo cree debido a que todavía le tendré que añadir muchos imports)
