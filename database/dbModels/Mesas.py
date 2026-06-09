@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, DateTime, Integer
+from sqlalchemy import Column, String, DateTime, Integer, Boolean
 from datetime import datetime
 from database import Base
 class Mesas(Base):
@@ -9,3 +9,4 @@ class Mesas(Base):
     capacity = Column(Integer, nullable=False)
     size = Column(Integer, nullable=False)
     quantity = Column(Integer, nullable=False)
+    status = Column(Boolean, default=False)
